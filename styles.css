@@ -2,11 +2,13 @@
 * {
     box-sizing: border-box;
 }
-html {
+html, body {
     background-color: white;
     font-family: 'Black Han Sans', sans-serif;
     color: black;
+    overflow-x: hidden;
 }
+
 .main-headers {
     text-align: center;
     color: black;
@@ -54,3 +56,14 @@ html {
     font-family: 'Black Han Sans', sans-serif;
 }
 .button:hover {background-color: #e7e7e7;}
+
+@media (max-width: 424px) {
+    .main-headers {
+        font-size: 73px;
+    }
+}
+@media (max-width: 440px) {
+    .image-center {
+        border-radius: 0;
+    }
+}
