@@ -3,20 +3,22 @@
     box-sizing: border-box;
 }
 html {
-    background-color: black;
+    background-color: white;
     font-family: 'Black Han Sans', sans-serif;
-    color: white;
+    color: black;
 }
 .main-headers {
     text-align: center;
-    color: white;
+    color: black;
     font-size: 85px;
 }
 .sub-headers {
     text-align: center;
-    color: white;
+    color: black;
     font-size: 30px;
 }
+
+/*IMAGES*/
 .image-center {
     display: block;
     margin-left: auto;
@@ -24,6 +26,18 @@ html {
     width: 50%;
     border-radius: 100%;
 }
+/* for image sizing */
+.container {
+    width: 420px;
+    height: 120px;
+}
+/* resize images */
+.container img {
+    width: 100%;
+    height: auto;
+}
+
+/*BUTTONS*/
 .button {
     background-color: white;
     color: black;
@@ -37,5 +51,6 @@ html {
     font-size: 16px;
     transition-duration: 0.4s;
     cursor: pointer;
+    font-family: 'Black Han Sans', sans-serif;
 }
 .button:hover {background-color: #e7e7e7;}
