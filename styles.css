@@ -28,6 +28,19 @@ html, body {
     width: 50%;
     border-radius: 100%;
 }
+
+.image-right {
+    margin-left: 55px;
+    margin-right: 100px;
+    text-align: right;
+    float: right;
+}
+
+.content-left {
+    float: left;
+    margin-left: 100px;
+}
+
 /* for image sizing */
 .container {
     width: 420px;
@@ -55,7 +68,9 @@ html, body {
     cursor: pointer;
     font-family: 'Black Han Sans', sans-serif;
 }
-.button:hover {background-color: #e7e7e7;}
+.button:hover {
+    background-color: #e7e7e7;
+}
 
 @media (max-width: 424px) {
     .main-headers {
