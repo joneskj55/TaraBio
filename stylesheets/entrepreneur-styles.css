@@ -19,6 +19,9 @@ html, body {
     color: black;
     font-size: 30px;
 }
+.content-center {
+    text-align: center;
+}
 
 /*BUTTONS*/
 .button {

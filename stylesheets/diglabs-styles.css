@@ -19,6 +19,9 @@ html, body {
     color: black;
     font-size: 30px;
 }
+.content-center {
+    text-align: center;
+}
 
 /*BUTTONS*/
 .button {
@@ -38,4 +41,19 @@ html, body {
 }
 .button:hover {
     background-color: #e7e7e7;
+}
+
+.bottom-images-div {
+    display: flex;
+    /*height: 300px;*/
+}
+.bottom-images {
+    width: 100px;  /* Or whatever */
+    height: 100px; /* Or whatever */
+    margin: auto;
+}
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
 }
