@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Nanum+Gothic&family=Nanum+Myeongjo&family=Roboto&display=swap');
 * {
     box-sizing: border-box;
 }
@@ -21,6 +22,7 @@ html, body {
 }
 .content-center {
     text-align: center;
+    font-family: 'Nanum Myeongjo', serif;
 }
 
 /*BUTTONS*/
