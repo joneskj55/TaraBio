@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+
 * {
     box-sizing: border-box;
 }
+
 html, body {
     background-color: white;
     font-family: 'Black Han Sans', sans-serif;
@@ -14,6 +16,7 @@ html, body {
     color: black;
     font-size: 85px;
 }
+
 .sub-headers {
     text-align: center;
     color: black;
@@ -34,6 +37,7 @@ html, body {
     width: 420px;
     height: 120px;
 }
+
 /* resize images */
 .container img {
     width: 100%;
@@ -56,6 +60,7 @@ html, body {
     cursor: pointer;
     font-family: 'Black Han Sans', sans-serif;
 }
+
 .button:hover {
     background-color: #e7e7e7;
 }
@@ -65,21 +70,25 @@ html, body {
         font-size: 72px;
     }
 }
+
 @media (max-width: 320px) {
     .main-headers {
         font-size: 63px;
     }
 }
+
 @media (max-width: 280px) {
     .main-headers {
         font-size: 55px;
     }
+
     .image-center {
         margin-left: -45px;
         margin-right: auto;
         display: block;
     }
 }
+
 @media (max-width: 440px) {
     .image-center {
         border-radius: 0;

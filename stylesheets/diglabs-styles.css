@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Nanum+Gothic&family=Nanum+Myeongjo&family=Roboto&display=swap');
+
 * {
     box-sizing: border-box;
 }
+
 html, body {
     background-color: white;
     font-family: 'Black Han Sans', sans-serif;
@@ -15,11 +17,13 @@ html, body {
     color: black;
     font-size: 85px;
 }
+
 .sub-headers {
     text-align: center;
     color: black;
     font-size: 30px;
 }
+
 .content-center {
     text-align: center;
     font-family: 'Nanum Myeongjo', serif;
@@ -41,6 +45,7 @@ html, body {
     cursor: pointer;
     font-family: 'Black Han Sans', sans-serif;
 }
+
 .button:hover {
     background-color: #e7e7e7;
 }
@@ -49,11 +54,13 @@ html, body {
     display: flex;
     /*height: 300px;*/
 }
+
 .bottom-images {
-    width: 100px;  /* Or whatever */
+    width: 100px; /* Or whatever */
     height: 100px; /* Or whatever */
     margin: auto;
 }
+
 .flex-container {
     display: flex;
     flex-flow: row wrap;
