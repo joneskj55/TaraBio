@@ -52,12 +52,11 @@ html, body {
 
 .bottom-images-div {
     display: flex;
-    /*height: 300px;*/
 }
 
 .bottom-images {
-    width: 100px; /* Or whatever */
-    height: 100px; /* Or whatever */
+    width: 100px;
+    height: 100px;
     margin: auto;
 }
 
