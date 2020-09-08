@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Nanum+Gothic&family=Nanum+Myeongjo&family=Roboto&display=swap');
+
+/** {*/
+/*    box-sizing: border-box;*/
+/*}*/
+
+html, body {
+    background-color: white;
+    color: black;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+ul.nav-bar {
+    font-family: 'Black Han Sans', sans-serif;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ed6a61;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+ul.nav-bar li {
+    float: left;
+}
+
+ul.nav-bar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.nav-bar li a:hover:not(.active) {
+    background-color: #111;
+}
+
+ul.nav-bar li a.active {
+    background-color: black;
+}
+
+ul.nav-bar li.right {
+    float: right;
+}
+
+.main-headers {
+    font-family: 'Black Han Sans', sans-serif;
+    text-align: center;
+    color: black;
+    font-size: 85px;
+    margin-top: 100px;
+}
+
+.sub-headers {
+    font-family: 'Black Han Sans', sans-serif;
+    text-align: center;
+    color: black;
+    font-size: 30px;
+}
+
+/*IMAGES*/
+.image-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 100%;
+}
+
+/* resize images */
+.container img {
+    width: 100%;
+    height: auto;
+}
+
+.image-right {
+    margin-right: 80px;
+    text-align: right;
+}
+
+.about-caption {
+    margin-left: 75px;
+    margin-right: 349px;
+    font-family: 'Nanum Myeongjo', serif;
+    font-style: italic;
+}
+
+.captions {
+    font-family: 'Nanum Myeongjo', serif;
+    font-style: italic;
+}
+
+hr {
+    margin: 45px 200px;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+
+.content-left {
+    float: left;
+    margin-left: 200px;
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+p {
+    margin: 20px 200px;
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+.bottom-images-div {
+    display: flex;
+}
+
+.bottom-images {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+/*BUTTONS*/
+.button {
+    background-color: #e7e7e7;
+    color: black;
+    border: 2px solid black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 55px;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    font-family: 'Black Han Sans', sans-serif;
+}
+
+.button:hover {
+    background-color: #ed6a61;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: #ed6a61;
+    color: black;
+    font-family: 'Nanum Myeongjo', serif;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
