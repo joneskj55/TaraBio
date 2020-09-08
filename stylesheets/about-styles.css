@@ -49,6 +49,12 @@ html, body {
     font-family: 'Nanum Myeongjo', serif;
 }
 
+.about-caption {
+    float: left;
+    margin-left: 75px;
+    font-family: 'Nanum Myeongjo', serif;
+}
+
 /*BUTTONS*/
 .button {
     background-color: #ed6a61;
