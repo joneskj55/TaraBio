@@ -313,3 +313,12 @@ p {
         background-color: #ed6a61;
     }
 }
+/*iPHONE X*/
+@media (max-width: 375px) and (max-height: 812px) {
+    .nav-bar {
+        font-size: 13px;
+    }
+    .main-headers {
+        font-size: 78px;
+    }
+}
