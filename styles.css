@@ -268,4 +268,13 @@ p {
         background-color: #ed6a61;
     }
 }
+/*iPHONE 5/SE*/
+@media (max-width: 320px) and (min-height: 568px) {
+    .nav-bar {
+        font-size: 10px;
+    }
+    .main-headers {
+        font-size: 66px;
+    }
+}
 
