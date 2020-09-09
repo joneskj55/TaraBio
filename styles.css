@@ -343,3 +343,24 @@ p {
         background-color: #ed6a61;
     }
 }
+/*iPAD PRO*/
+@media (max-width: 1024px) and (max-height: 1366px) {
+    .image-center {
+        border-radius: 100%;
+        width: 76%;
+    }
+    .content-left {
+        margin-left: 0;
+    }
+    .image-right {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+    }
+    p {
+        margin: 20px 30px;
+    }
+    .button {
+        background-color: #ed6a61;
+    }
+}
