@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Nanum+Gothic&family=Nanum+Myeongjo&family=Roboto&display=swap');
 
-/** {*/
-/*    box-sizing: border-box;*/
-/*}*/
-
 html, body {
     background-color: white;
     color: black;
@@ -97,21 +93,17 @@ hr {
     border-top: 1px solid #eee;
 }
 
-.content-left {
-    float: left;
-    margin-left: 200px;
-    font-family: 'Nanum Myeongjo', serif;
-}
-
 p {
     margin: 20px 200px;
     font-family: 'Nanum Myeongjo', serif;
+    font-size: larger;
 }
 
 .list {
     width: 300px;
     height: 299px;
     font-family: 'Nanum Myeongjo', serif;
+    font-size: larger;
 }
 
 .bottom-images-div {
@@ -136,9 +128,7 @@ p {
     color: black;
     border: 2px solid black;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 55px;
+    margin: 35px auto 55px;
     padding: 16px 32px;
     text-align: center;
     text-decoration: none;
