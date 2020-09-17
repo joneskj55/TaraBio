@@ -76,13 +76,13 @@ ul.nav-bar li a.active {
 }
 
 hr {
-    margin: 45px 200px;
+    margin: 45px 15%;
     border: 0;
     border-top: 1px solid #eee;
 }
 
 p {
-    margin: 20px 200px;
+    margin: 20px 15%;
     font-family: 'Nanum Myeongjo', serif;
     font-size: larger;
 }
@@ -271,7 +271,7 @@ p {
     }
 
     p {
-        margin: 20px 30px;
+        margin: 20px 6%;
     }
 
     .button {
