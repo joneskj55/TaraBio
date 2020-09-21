@@ -45,8 +45,10 @@ function isElementVisible(el) {
 }
 
 //---INDICATE DOM LOCATION IN NAV---//
-window.onload = function () {
-    navHome.className = 'active';
+if (innerWidth >= 768) {
+    window.onload = function () {
+        navHome.className = 'active';
+    }
 }
 
 function lightUpNav() {
