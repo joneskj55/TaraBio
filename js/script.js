@@ -77,10 +77,11 @@ function lightUpNav() {
             break;
     }
 }
-
+if (innerWidth >= 768) {
 document.onscroll = function () {
-    lightUpNav()
-};
+    lightUpNav();
+}
+}
 
 
 
