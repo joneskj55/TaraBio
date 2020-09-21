@@ -10,7 +10,7 @@ $(document).ready(function () {
 });
 
 //---DOM LOCATIONS---//
-const homeArea = document.getElementById('home');
+const homeArea = document.getElementById('home-nav-highlight');
 const aboutArea = document.getElementById('about-nav-highlight');
 const entreArea = document.getElementById('entre-nav-highlight');
 const diglabsArea = document.getElementById('dig-nav-highlight');
@@ -50,25 +50,31 @@ window.onload = function () {
 }
 
 function lightUpNav() {
-    if (isElementVisible(homeArea)) {
-        navHome.className = 'active';
-    } else {
-        navHome.classList.remove('active');
-    }
-    if (isElementVisible(aboutArea)) {
-        navAbout.className = 'active';
-    } else {
-        navAbout.classList.remove('active');
-    }
-    if (isElementVisible(entreArea)) {
-        navEntre.className = 'active';
-    } else {
-        navEntre.classList.remove('active');
-    }
-    if (isElementVisible(diglabsArea)) {
-        navDig.className = 'active';
-    } else {
-        navDig.classList.remove('active');
+    switch (true) {
+        case isElementVisible(homeArea):
+            navHome.classname = 'active';
+            navAbout.classList.remove('active');
+            navEntre.classList.remove('active');
+            navDig.classList.remove('active');
+            break;
+        case isElementVisible(aboutArea):
+            navAbout.className = 'active';
+            navHome.classList.remove('active');
+            navEntre.classList.remove('active');
+            navDig.classList.remove('active');
+            break;
+        case isElementVisible(entreArea):
+            navEntre.className = 'active';
+            navHome.classList.remove('active');
+            navAbout.classList.remove('active');
+            navDig.classList.remove('active');
+            break;
+        case isElementVisible(diglabsArea):
+            navDig.className = 'active';
+            navHome.classList.remove('active');
+            navEntre.classList.remove('active');
+            navAbout.classList.remove('active');
+            break;
     }
 }
 
