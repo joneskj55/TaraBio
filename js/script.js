@@ -9,16 +9,26 @@ $(document).ready(function () {
     });
 });
 
-const homeArea = document.querySelector('#home');
-const aboutArea = document.querySelector('#about');
-const entreArea = document.querySelector('#entrepreneur');
-const diglabsArea = document.querySelector('#diglabs');
+//---DOM LOCATIONS---//
+const homeArea = document.getElementById('home');
+const aboutArea = document.getElementById('about-nav-highlight');
+const entreArea = document.getElementById('entre-nav-highlight');
+const diglabsArea = document.getElementById('dig-nav-highlight');
 
+//---NAV ELEMENTS---//
+const navHome = document.getElementById('home-nav');
+const navAbout = document.getElementById('about-nav');
+const navEntre = document.getElementById('entre-nav');
+const navDig = document.getElementById('dig-nav');
+
+//---CHECK IF ELEMENT IS IN VIEW---//
 function isElementVisible(el) {
-    let rect     = el.getBoundingClientRect(),
-        vWidth   = window.innerWidth || document.documentElement.clientWidth,
-        vHeight  = window.innerHeight || document.documentElement.clientHeight,
-        efp      = function (x, y) { return document.elementFromPoint(x, y) };
+    let rect = el.getBoundingClientRect(),
+        vWidth = window.innerWidth || document.documentElement.clientWidth,
+        vHeight = window.innerHeight || document.documentElement.clientHeight,
+        efp = function (x, y) {
+            return document.elementFromPoint(x, y)
+        };
 
     // Return false if it's not in the viewport
     if (rect.right < 0 || rect.bottom < 0
@@ -27,25 +37,46 @@ function isElementVisible(el) {
 
     // Return true if any of its four corners are visible
     return (
-        el.contains(efp(rect.left,  rect.top))
-        ||  el.contains(efp(rect.right, rect.top))
-        ||  el.contains(efp(rect.right, rect.bottom))
-        ||  el.contains(efp(rect.left,  rect.bottom))
+        el.contains(efp(rect.left, rect.top))
+        || el.contains(efp(rect.right, rect.top))
+        || el.contains(efp(rect.right, rect.bottom))
+        || el.contains(efp(rect.left, rect.bottom))
     );
 }
-document.getElementById('home').onscroll = function () {isElementVisible(homeArea, aboutArea, entreArea, diglabsArea)};
 
-console.log('is home showing: ' + isElementVisible(homeArea));
-console.log('is about showing: ' + isElementVisible(aboutArea));
-console.log('is entrepreneur showing: ' + isElementVisible(entreArea));
-console.log('is diglabs showing: ' + isElementVisible(diglabsArea));
+//---INDICATE DOM LOCATION IN NAV---//
+window.onload = function () {
+    navHome.className = 'active';
+}
 
-// if within section add class ul.nav-bar li a:hover:not(.active) {background-color: #111;}
+function lightUpNav() {
+    if (isElementVisible(homeArea)) {
+        navHome.className = 'active';
+    } else {
+        navHome.classList.remove('active');
+    }
+    if (isElementVisible(aboutArea)) {
+        navAbout.className = 'active';
+    } else {
+        navAbout.classList.remove('active');
+    }
+    if (isElementVisible(entreArea)) {
+        navEntre.className = 'active';
+    } else {
+        navEntre.classList.remove('active');
+    }
+    if (isElementVisible(diglabsArea)) {
+        navDig.className = 'active';
+    } else {
+        navDig.classList.remove('active');
+    }
+}
+
+document.onscroll = function () {
+    lightUpNav()
+};
 
 
-
-
-//when viewport gets to id="about" apply .active to #about
 
 
 

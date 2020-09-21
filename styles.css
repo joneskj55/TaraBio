@@ -35,9 +35,13 @@ ul.nav-bar li a:hover:not(.active) {
     background-color: #111;
 }
 
-ul.nav-bar li a.active {
-    background-color: black;
+.active {
+    background-color: #111;
 }
+
+/*ul.nav-bar li a.active {*/
+/*    background-color: black;*/
+/*}*/
 
 .main-headers {
     font-family: 'Black Han Sans', sans-serif;
