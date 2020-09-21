@@ -10,10 +10,10 @@ $(document).ready(function () {
 });
 
 //---DOM LOCATIONS---//
-const homeArea = document.getElementById('home-nav-highlight');
-const aboutArea = document.getElementById('about-nav-highlight');
+const homeArea = document.getElementById('home');
+const aboutArea = document.getElementById('about');
 const entreArea = document.getElementById('entre-nav-highlight');
-const diglabsArea = document.getElementById('dig-nav-highlight');
+const diglabsArea = document.getElementById('diglabs');
 
 //---NAV ELEMENTS---//
 const navHome = document.getElementById('home-nav');
