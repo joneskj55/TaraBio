@@ -34,7 +34,7 @@ function isElementVisible(el) {
 }
 
 //---ADD ACTIVE CLASS TO 'HOME' IN NAV IF DEVICE IS IPAD OR LARGER---//
-if (innerWidth >= 768) {
+if (innerWidth >= 768 && isElementVisible(homeArea)) {
     window.onload = function () {
         navHome.className = 'active';
     }
@@ -78,8 +78,5 @@ document.onscroll = function () {
     lightUpNav();
 }
 }
-
-
-
 
 
