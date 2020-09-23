@@ -33,7 +33,7 @@ function isElementVisible(el) {
     );
 }
 
-//---ADD ACTIVE CLASS TO 'HOME' IN NAV IF DEVICE IS IPAD OR LARGER---//
+//---ADD ACTIVE CLASS TO 'HOME' IN NAV ON LOAD IF DEVICE IS IPAD OR LARGER---//
 if (innerWidth >= 768 && isElementVisible(homeArea)) {
     window.onload = function () {
         navHome.className = 'active';
