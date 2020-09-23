@@ -1,14 +1,3 @@
-$(document).ready(function () {
-
-//---SMOOTH SCROLLING FROM VIEWPORT TO TARGET--//
-    $("a[href^='#']").click(function (event) {
-        event.preventDefault();
-        $("html,body").animate({
-            scrollTop: $(this.hash).offset().top - 50
-        }, 900);
-    });
-});
-
 //---DOM LOCATIONS---//
 const homeArea = document.getElementById('home');
 const aboutArea = document.getElementById('about');
@@ -78,6 +67,8 @@ function lightUpNav() {
             navEntre.classList.remove('active');
             navAbout.classList.remove('active');
             break;
+        default:
+            navHome.classname = 'active';
     }
 }
 
