@@ -44,11 +44,9 @@ function isElementVisible(el) {
     );
 }
 
-//---ADD ACTIVE CLASS TO 'HOME' IN NAV ON LOAD IF DEVICE IS IPAD OR LARGER---//
-if (innerWidth >= 768 && isElementVisible(homeArea)) {
-    window.onload = function () {
-        navHome.className = 'active';
-    }
+//---ADD ACTIVE CLASS TO 'HOME' IN NAV ON LOAD---//
+window.onload = function () {
+    navHome.className = 'active';
 }
 
 //---INDICATE DOM LOCATION IN NAVBAR---//
@@ -82,13 +80,6 @@ function lightUpNav() {
             navHome.classname = 'active';
     }
 }
-
-//---RUN DOM LOCATION FUNCTION ON SCROLL IF IPAD OR LARGER---//
-// if (innerWidth >= 768) {
-//     document.onscroll = function () {
-//         lightUpNav();
-//     }
-// }
 
 document.onscroll = function () {
     lightUpNav();
