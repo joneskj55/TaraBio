@@ -84,10 +84,15 @@ function lightUpNav() {
 }
 
 //---RUN DOM LOCATION FUNCTION ON SCROLL IF IPAD OR LARGER---//
-if (innerWidth >= 768) {
-    document.onscroll = function () {
-        lightUpNav();
-    }
+// if (innerWidth >= 768) {
+//     document.onscroll = function () {
+//         lightUpNav();
+//     }
+// }
+
+document.onscroll = function () {
+    lightUpNav();
 }
+
 
 
