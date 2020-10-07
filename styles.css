@@ -17,7 +17,7 @@ ul.nav-bar {
     position: fixed;
     top: 0;
     width: 100%;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 ul.nav-bar li {
@@ -53,6 +53,10 @@ ul.nav-bar li a.active {
     display: inherit;
 }
 
+.hideme {
+    opacity: 0;
+}
+
 .sub-headers {
     font-family: 'Black Han Sans', sans-serif;
     text-align: center;
@@ -73,11 +77,11 @@ ul.nav-bar li a.active {
 .container img {
     width: 100%;
     height: auto;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 img {
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 .captions {
