@@ -22,11 +22,10 @@ $(document).ready(function () {
 });
 
 //---LAZY LOADING---//
-$(function () {  // $(document).ready shorthand
+$(function () {
     $('.monster').fadeIn('slow');
 });
 $(document).ready(function () {
-    /* Every time the window is scrolled ... */
     $(window).scroll(function () {
         /* Check the location of each desired element */
         $('.hideme').each(function (i) {
@@ -78,7 +77,7 @@ function isElementVisible(el) {
 //---ADD ACTIVE CLASS TO 'HOME' IN NAV ON LOAD---//
 window.onload = function () {
     navHome.className = 'active';
-    typeWriter();
+    typeWriter(); //run typeWriter effect on load
 }
 
 //---INDICATE DOM LOCATION IN NAVBAR---//
