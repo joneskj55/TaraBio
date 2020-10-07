@@ -1,5 +1,17 @@
+//---TYPE EFFECT---//
+let i = 0;
+let txt = 'Engineer, Inventor, Entrepreneur, Founder, CEO';
+let speed = 60;
+
+function typeWriter() {
+    if (i < txt.length) {
+        document.getElementById("type").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+    }
+}
+
 //---SMOOTH SCROLLING FROM VIEWPORT TO TARGET--//
-"use strict";
 $(document).ready(function () {
     $("a[href^='#']").click(function (event) {
         event.preventDefault();
@@ -9,6 +21,7 @@ $(document).ready(function () {
     });
 });
 
+//---LAZY LOADING---//
 $(function () {  // $(document).ready shorthand
     $('.monster').fadeIn('slow');
 });
@@ -65,6 +78,7 @@ function isElementVisible(el) {
 //---ADD ACTIVE CLASS TO 'HOME' IN NAV ON LOAD---//
 window.onload = function () {
     navHome.className = 'active';
+    typeWriter();
 }
 
 //---INDICATE DOM LOCATION IN NAVBAR---//
