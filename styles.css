@@ -124,6 +124,16 @@ p {
     justify-content: space-around;
 }
 
+.app {
+    font-weight: bold;
+    color: #ed6a61;
+}
+
+.app-text {
+    font-weight: bolder;
+    color: #ed6a61;
+}
+
 /*BUTTONS*/
 .button {
     background-color: #e7e7e7;
