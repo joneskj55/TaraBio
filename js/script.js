@@ -106,6 +106,17 @@ function lightUpNav() {
             navHome.classList.remove('active');
             navEntre.classList.remove('active');
             navAbout.classList.remove('active');
+            const modal = document.getElementById("myModal");
+            const span = document.getElementsByClassName("close")[0];
+            modal.style.display = "block";
+            span.onclick = function () {
+                modal.style.display = "none";
+            }
+            window.onclick = function (event) {
+                if (event.target === modal) {
+                    modal.style.display = "none";
+                }
+            }
             break;
         default:
             navHome.classname = 'active';
@@ -115,6 +126,5 @@ function lightUpNav() {
 document.onscroll = function () {
     lightUpNav();
 }
-
 
 
