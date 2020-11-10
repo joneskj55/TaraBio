@@ -11,6 +11,19 @@ function typeWriter() {
     }
 }
 
+//--- APP PROMOTION TYPE EFFECT---//
+let k = 0;
+let digTxt = 'Click here for early access to the Dig Labs pet-health app!';
+let digSpeed = 100;
+
+function digType() {
+    if (k < digTxt.length) {
+        document.getElementById("new-app").innerHTML += digTxt.charAt(k);
+        k++;
+        setTimeout(digType, digSpeed);
+    }
+}
+
 //---SMOOTH SCROLLING FROM VIEWPORT TO TARGET--//
 $(document).ready(function () {
     $("a[href^='#']").click(function (event) {
@@ -106,17 +119,7 @@ function lightUpNav() {
             navHome.classList.remove('active');
             navEntre.classList.remove('active');
             navAbout.classList.remove('active');
-            const modal = document.getElementById("myModal");
-            const span = document.getElementsByClassName("close")[0];
-            modal.style.display = "block";
-            span.onclick = function () {
-                modal.style.display = "none";
-            }
-            window.onclick = function (event) {
-                if (event.target === modal) {
-                    modal.style.display = "none";
-                }
-            }
+            digType();
             break;
         default:
             navHome.classname = 'active';
