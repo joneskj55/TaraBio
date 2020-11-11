@@ -14,7 +14,7 @@ function typeWriter() {
 //--- APP PROMOTION TYPE EFFECT---//
 let k = 0;
 let digTxt = 'Click here for early access to the Dig Labs pet-health app!';
-let digSpeed = 125;
+let digSpeed = 200;
 
 function digType() {
     if (k < digTxt.length) {
