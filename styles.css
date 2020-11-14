@@ -102,7 +102,7 @@ p {
 }
 
 .list {
-    width: 300px;
+    /*width: 300px;*/
     height: 299px;
     font-family: 'Nanum Myeongjo', serif;
     font-size: larger;
