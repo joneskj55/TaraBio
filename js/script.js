@@ -119,7 +119,9 @@ function lightUpNav() {
             navHome.classList.remove('active');
             navEntre.classList.remove('active');
             navAbout.classList.remove('active');
-            setTimeout(function () { digType(); }, 3000);
+            setTimeout(function () {
+                digType();
+            }, 3000);
             break;
         default:
             navHome.classname = 'active';
