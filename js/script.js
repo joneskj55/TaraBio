@@ -13,7 +13,7 @@ function typeWriter() {
 
 //--- APP PROMOTION TYPE EFFECT---//
 let k = 0;
-let digTxt = 'Click here for early access to the Dig Labs pet-health app!';
+let digTxt = 'Sign up for early access to the Dig Labs pet-health app!';
 let digSpeed = 125;
 
 function digType() {
