@@ -124,8 +124,7 @@ p {
     justify-content: space-around;
 }
 
-.no-underline {
-    text-decoration: none;
+.promotion {
     color: #ed6a61;
     font-weight: bolder;
 }
