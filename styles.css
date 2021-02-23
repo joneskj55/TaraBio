@@ -306,6 +306,10 @@ span {
     margin: 20px 6%;
   }
 
+  iframe {
+    width: 80%;
+  }
+
   .button {
     background-color: #ed6a61;
   }
